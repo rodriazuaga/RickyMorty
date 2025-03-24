@@ -14,8 +14,7 @@ Este es un proyecto de una API en Node.js que consulta la API de Rick & Morty y 
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/rodriazuaga/RickyMorty.git)
 ```
 
 ### 2. Instalar dependencias
@@ -41,7 +40,7 @@ const client = createClient({
 
 ### 5. Iniciar el servidor
 ```bash
-npm start
+node index.js
 ```
 
 ## 🛠 Uso de la API
@@ -57,26 +56,9 @@ GET http://localhost:3000/personajes
 ## 🐳 Usando Docker Compose
 Si quieres ejecutar la API y Redis con **Docker Compose**, usa el siguiente archivo `docker-compose.yml`:
 
-```yaml
-version: '3'
-services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-    depends_on:
-      - redis
-  redis:
-    image: redis
-    ports:
-      - "6379:6379"
-```
-
-Para levantar los servicios, ejecuta:
 ```bash
 docker-compose up -d
 ```
 
-## 📄 Licencia
-Este proyecto está bajo la licencia MIT.
+
 
